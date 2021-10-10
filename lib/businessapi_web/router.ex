@@ -1,3 +1,4 @@
+
 defmodule BusinessapiWeb.Router do
   use BusinessapiWeb, :router
 
@@ -8,7 +9,7 @@ defmodule BusinessapiWeb.Router do
   scope "/api", BusinessapiWeb do
     pipe_through :api
 
-    resources "/business", BusinessController, except: [:delete]
+    resources "/business", BusinessController
   end
 
   # Enables LiveDashboard only for development
